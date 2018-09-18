@@ -7,13 +7,20 @@
 docker pull asciinema/asciinema
 
 # 3a) boot into container
-docker run --rm -ti asciinema/asciinema bash
+docker run -ti asciinema/asciinema bash
 
 # From withink container
 apt-get update
 apt-get install r-base
 
-# boot into R- install bioconductor
-## try http:// if https:// URLs are not supported
-source("https://bioconductor.org/biocLite.R")
-biocLite()
+# save container
+docker commit [containerID] asciinema:r-base
+
+# get ready to commit for dockerhub
+docker login
+login:
+pwd:
+
+# Then tag container
+docker tag 7591124dd90b dominicklemas/r-base:asciinema
+docker push dominicklemas/r-base
