@@ -1,10 +1,10 @@
-# asciinema Docker Images (https://hub.docker.com/r/asciinema/asciinema/)
+# ubuntu Docker Images (https://hub.docker.com/_/ubuntu)
 # windows
 
 # 1) open docker teminal
 
 # 2) pull container
-docker pull asciinema/asciinema
+docker pull ubuntu
 
 # 3a) boot into container
-docker run -ti asciinema/asciinema bash
+docker run -ti ubuntu bash
