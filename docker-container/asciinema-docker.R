@@ -1,4 +1,6 @@
 # asciinema Docker Images (https://hub.docker.com/r/asciinema/asciinema/)
+# directions on saving container as image (https://www.techrepublic.com/article/how-to-commit-changes-to-a-docker-image/)
+# directiopns on pusing image to docker hub ( ) 
 # windows
 
 # 1) open docker teminal
