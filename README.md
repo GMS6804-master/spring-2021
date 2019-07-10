@@ -1,4 +1,4 @@
-# MED263 Winter 2018, Bioinformatics Applications to Human Disease
+# GMS6804 Spring 2020, Translational Bioinformatics
 
 ## Course Description
 This course will cover translational bioinformatics in the context of human diseases. Students will be provided with the practical skills to implement what they have learned in class. Specifically, when the course is finished, students will be able to analyze multi-omics data to understand human disease.
