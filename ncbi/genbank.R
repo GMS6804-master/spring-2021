@@ -1,18 +1,16 @@
 
-install.packages('rvest')
+# install.packages('rvest')
 
 library(rentrez)
 library(rvest)
 require(RCurl)
 library(readr)
+library(stringr)
 
 
 # short read archives
 entrez_db_summary("sra")
 entrez_db_searchable("sra")
-
-# Loading the rvest package
-library('rvest')
 
 #Specifying the url for desired website to be scraped
 url <- 'http://www.imdb.com/search/title?count=100&release_date=2016,2016&title_type=feature'
@@ -42,11 +40,10 @@ filenames
 # download all files
 for (filename in filenames) {
   download.file(paste(url, filename, sep = ""), paste(getwd(), "/ncbi/genbank_notes/", filename,
-                                                      sep = ""))
-}
+                                                      sep = ""))}
 
 # create data set
-  df <- data.frame(date=as.Date(character()),
+  df <- data.frame(date=character(),
                    release=character(), 
                    bases=character(), 
                    sequences=character(),
@@ -55,7 +52,7 @@ for (filename in filenames) {
 
 # open files and extract data
 filenames=list.files(paste0(getwd(), "/ncbi/genbank_notes/"))
-for (i in length(filenames)) {
+for (i in 1:length(filenames)) {
   tmp=read_file(paste0(getwd(), "/ncbi/genbank_notes/",filenames[i],sep = ""))
   tmp_clean <- strsplit(tmp, "\r\n")
   test <- unlist(lapply(tmp_clean, function(x) x[!x %in% ""]))
@@ -66,13 +63,22 @@ for (i in length(filenames)) {
   date_tmp=test.tmp1[2]
   
   # release
-  release_tmp=test.tmp1[3]
+  release_tmp=filenames[i]
+  release_tmp2=str_split(release_tmp, "[.]")[[1]][1]
   
   # bases
-  base_tmp=test.tmp1[5]
+  base_tmp=str_split(test.tmp1[5],",")[[1]][2]
+  base_tmp2=str_split(trimws(base_tmp, "l")," ")[[1]][1]
   
   # sequences
-  seq_tmp=test.tmp1[5]
+  seq_tmp=str_split(test.tmp1[5], ",")[[1]][1]
+  seq_tmp2=str_split(trimws(seq_tmp, "l")," ")[[1]][1]
+  
+  # populate df
+  df[i,1]=date_tmp
+  df[i,2]=release_tmp2
+  df[i,3]=base_tmp2
+  df[i,4]=seq_tmp2
   
   }
 
