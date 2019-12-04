@@ -7,7 +7,6 @@ require(RCurl)
 library(readr)
 library(stringr)
 
-
 # short read archives
 entrez_db_summary("sra")
 entrez_db_searchable("sra")
@@ -65,6 +64,8 @@ for (i in 1:length(filenames)) {
   # release
   release_tmp=filenames[i]
   release_tmp2=str_split(release_tmp, "[.]")[[1]][1]
+  release_tmp3=as.numeric(gsub("gb","",release_tmp2))
+  
   
   # bases
   base_tmp=str_split(test.tmp1[5],",")[[1]][2]
@@ -76,10 +77,17 @@ for (i in 1:length(filenames)) {
   
   # populate df
   df[i,1]=date_tmp
-  df[i,2]=release_tmp2
+  df[i,2]=release_tmp3
   df[i,3]=base_tmp2
   df[i,4]=seq_tmp2
   
+  # format the data
+  df$bases=as.numeric(df$bases)
+  df$sequences=as.numeric(df$sequences)
+  df$release=as.numeric(df$release)
+  
+  newdata <- df[order(df$release),]
+  
   }
 
-
+save(newdata,file="ncbi.rda")
