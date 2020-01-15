@@ -5,12 +5,10 @@ In this tutorial, we will modify an [asciinema docker image](https://hub.docker.
 1) open docker teminal
 
 2) pull container
-
 >``docker pull asciinema/asciinema``
 
 3) check containerID
-
->``docker ps``
+>``docker images``
 
 4) boot into container
 >``docker run -ti asciinema/asciinema bash``
