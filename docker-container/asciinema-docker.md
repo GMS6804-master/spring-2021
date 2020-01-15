@@ -16,8 +16,8 @@ In this tutorial, we will modify an [asciinema docker image](https://hub.docker.
 >``docker run -ti asciinema/asciinema bash``
 
 5) modify the container
->>``apt-get update``
->>``apt-get install r-base``
+>``$apt-get update``
+>``$apt-get install r-base``
 
 6) save the new container
 >``docker commit [containerID] asciinema:r-base``
