@@ -6,7 +6,7 @@ asciinema Docker Images (https://hub.docker.com/r/asciinema/asciinema/)
 
 2) pull container
 
-docker pull asciinema/asciinema
+``docker pull asciinema/asciinema``
 
 3) check containerID
 
