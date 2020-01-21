@@ -1,7 +1,6 @@
-# Modify a docker image and push to Dockerhub() 
+# My first docker container 
 
-In this tutorial, we will modify an [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/) by installing r-base. We will then save our modified container and push our changes to dockerhub(). 
-
+In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/), run a container using this image and complete a simple screen recording.
 1) open docker teminal
 
 2) pull container
@@ -19,9 +18,7 @@ In this tutorial, we will modify an [asciinema docker image](https://hub.docker.
 asciinema: recording asciicast to /tmp/tmpjzofrzcl-ascii.cast
 asciinema: press <ctrl-d> or type "exit" when you're done
 
-# type something
-
-# if you want to end recording, hit control-D. Follow directions to get link to share video. 
+# type something. If you want to end recording, hit control-D. Follow directions on screen to get link to share video. 
 
 6) exit container
 exit
