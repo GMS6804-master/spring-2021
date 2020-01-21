@@ -13,10 +13,10 @@ In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com
 >``docker run -ti asciinema/asciinema bash``
 
 5) ($) start a screen recording
- $ asciinema rec
+> $ asciinema rec
 
-asciinema: recording asciicast to /tmp/tmpjzofrzcl-ascii.cast
-asciinema: press <ctrl-d> or type "exit" when you're done
+>$ asciinema: recording asciicast to /tmp/tmpjzofrzcl-ascii.cast
+>$ asciinema: press <ctrl-d> or type "exit" when you're done
 
 # type something. If you want to end recording, hit control-D. Follow directions on screen to get link to share video. 
 
