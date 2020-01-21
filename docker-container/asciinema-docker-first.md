@@ -6,7 +6,7 @@ In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com
 2) pull container
 >``docker pull asciinema/asciinema``
 
-3) check containerID
+3) check image ID
 >``docker images``
 
 4) boot into container
