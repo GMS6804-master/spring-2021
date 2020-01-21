@@ -15,21 +15,20 @@ In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com
 5) ($) start a screen recording
 > $ asciinema rec
 
->$ asciinema: recording asciicast to /tmp/tmpjzofrzcl-ascii.cast
->$ asciinema: press <ctrl-d> or type "exit" when you're done
 
-# type something. If you want to end recording, hit control-D. Follow directions on screen to get link to share video. 
+6) type something. If you want to end recording, hit control-D. Follow directions on screen to get link to share video. 
+> $ # Hello World!
 
-6) exit container
+7) exit container
 >exit
 
-7) check container status
+8) check container status
 >docker container ls
 
-8) kill container 
+9) kill container 
 >docker kill [container ID]
 
-9) remove container
+10) remove container
 >docker rm -f [container ID]
 
 
