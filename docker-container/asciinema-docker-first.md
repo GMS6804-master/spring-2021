@@ -2,7 +2,7 @@
 
 In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/), run a container using this image and complete a simple screen recording.
 
-1) create asccinema account
+1) create asccinema.org account
 
 2) open docker teminal
 
@@ -12,19 +12,24 @@ docker pull asciinema/asciinema
 ```
 
 4) check image ID
->``docker images``
+```
+docker images
+```
 
 5) boot into container
->``docker run -ti asciinema/asciinema bash``
+```
+docker run -ti asciinema/asciinema bash
+```
 
 6) link docker container to asciinema.org
->``asciinema auth``
-
->> Open the following URL in a web browser to link your install ID with your asciinema.org user account:
->> https://asciinema.org/connect/[your-url]
-
->>This will associate all recordings uploaded from this machine (past and future ones) to your account, and allow you to manage them (change title/theme, delete) at asciinema.org.
-
+```
+asciinema auth
+```
+```
+Open the following URL in a web browser to link your install ID with your asciinema.org user account:
+https://asciinema.org/connect/[your-url]
+This will associate all recordings uploaded from this machine (past and future ones) to your account, and allow you to manage them (change title/theme, delete) at asciinema.org.
+```
 7) ($) start a screen recording
 ```
 > $ asciinema rec
