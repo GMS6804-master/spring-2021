@@ -18,11 +18,10 @@ In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com
 6) link docker container to asciinema.org
 >``asciinema auth``
 
-Open the following URL in a web browser to link your install ID with your asciinema.org user account:
+>> Open the following URL in a web browser to link your install ID with your asciinema.org user account:
+>> https://asciinema.org/connect/[your-url]
 
-https://asciinema.org/connect/[your-url]
-
-This will associate all recordings uploaded from this machine (past and future ones) to your account, and allow you to manage them (change title/theme, delete) at asciinema.org.
+>>This will associate all recordings uploaded from this machine (past and future ones) to your account, and allow you to manage them (change title/theme, delete) at asciinema.org.
 
 7) ($) start a screen recording
 > ``$ asciinema rec``
