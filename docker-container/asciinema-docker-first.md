@@ -1,34 +1,47 @@
 # My first docker container 
 
 In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/), run a container using this image and complete a simple screen recording.
-1) open docker teminal
 
-2) pull container
+1) create asccinema account
+
+2) open docker teminal
+
+3) pull container
 >``docker pull asciinema/asciinema``
 
-3) check image ID
+4) check image ID
 >``docker images``
 
-4) boot into container
+5) boot into container
 >``docker run -ti asciinema/asciinema bash``
 
-5) ($) start a screen recording
-> $ asciinema rec
+6) link docker container to asciinema.org
+>``asciinema auth``
 
+Open the following URL in a web browser to link your install ID with your asciinema.org user account:
 
-6) type something. If you want to end recording, hit control-D. Follow directions on screen to get link to share video. 
-> $ # Hello World!
+https://asciinema.org/connect/[your-url]
 
-7) exit container
->exit
+This will associate all recordings uploaded from this machine (past and future ones) to your account, and allow you to manage them (change title/theme, delete) at asciinema.org.
 
-8) check container status
->docker container ls
+7) ($) start a screen recording
+> ``$ asciinema rec``
+> ``$ # Hello Translational Bioinformatics Class!``
+> ``$ # exit``
 
-9) kill container 
->docker kill [container ID]
+8) End the recording by hitting control-D. Follow directions on screen to get link to video in your asciinema.org account. 
+>``ctrl-d``
 
-10) remove container
->docker rm -f [container ID]
+9) exit container
+> ``exit``
+
+10) check container status
+>``docker container ls``
+
+11) kill container 
+>``docker kill [container ID]``
+
+12) remove container
+>``docker rm -f [container ID]``
 
 
