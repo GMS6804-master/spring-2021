@@ -7,7 +7,9 @@ In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com
 2) open docker teminal
 
 3) pull container
->``docker pull asciinema/asciinema``
+```
+docker pull asciinema/asciinema
+```
 
 4) check image ID
 >``docker images``
