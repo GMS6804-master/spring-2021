@@ -1,6 +1,7 @@
 # My first docker container 
 
-In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/), run a container using this image and complete a simple screen recording.
+In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/), 
+run a container using this image, complete a simple screen recording, and upload to asciinema.org.
 
 1) create asccinema.org account
 
@@ -26,10 +27,10 @@ docker run -ti asciinema/asciinema bash
 > asciinema auth
 ```
 ```
-Open the following URL in a web browser to link your install ID with your asciinema.org user account:
-https://asciinema.org/connect/[your-url]
-This will associate all recordings uploaded from this machine (past and future ones) to your account, 
-and allow you to manage them (change title/theme, delete) at asciinema.org.
+> Open the following URL in a web browser to link your install ID with your asciinema.org user account:
+> https://asciinema.org/connect/[your-url]
+> This will associate all recordings uploaded from this machine (past and future ones) to your account, 
+> and allow you to manage them (change title/theme, delete) at asciinema.org.
 ```
 7) start a screen recording
 ```
