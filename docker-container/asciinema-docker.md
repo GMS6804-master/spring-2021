@@ -14,7 +14,7 @@ docker pull asciinema/asciinema
 
 4) boot into container as bash
 ```
-docker run asciinema/asciinema bash
+docker run -it asciinema/asciinema bash
 ```
 
 5) link docker container to asciinema.org
