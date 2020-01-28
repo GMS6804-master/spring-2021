@@ -14,7 +14,7 @@ docker pull asciinema/asciinema
 
 4) boot into container as bash
 ```
-docker run -ti asciinema/asciinema bash
+docker run asciinema/asciinema bash
 ```
 
 5) link docker container to asciinema.org
@@ -42,7 +42,7 @@ docker run -ti asciinema/asciinema bash
 > # stop recording
 > exit
 > # exit docker container
-> exit
+> [ctrl-q, key stroke]
 ```
 
 7) check container ID. save the modified container (i.e. r-base install)
