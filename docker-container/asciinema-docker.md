@@ -3,7 +3,7 @@
 In this tutorial, we will modify an [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/) by installing r-base. 
 We will then save our modified container and push our changes to dockerhub(). 
 
-1) create asccinema.org account
+1) create asccinema.org and dockerhub.com account
 
 2) open docker teminal
 
@@ -30,13 +30,24 @@ docker run -ti asciinema/asciinema bash
 6) start a screen recording & modify the container
 ```
 > asciinema rec
+> # check if R is installed?
+> R
+> # we will now install r-base
 > apt-get update
-> apt-get install r-base
+> apt-get install r-base -y
+> # check to see if R has been installed
+> R
+> # exit R
+> quit()
+> # stop recording
+> exit
+> # exit docker container
+> exit
 ```
 
-7) check image ID. save the new container
+7) check container ID. save the modified container (i.e. r-base install)
 ```
-docker images
+docker ps
 docker commit [containerID] asciinema:r-base
 ```
 
