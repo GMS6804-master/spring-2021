@@ -39,16 +39,15 @@ docker run -it asciinema/asciinema bash
 > R
 > # exit R
 > quit()
-> # stop recording
-> exit
 > # exit docker container
-> [ctrl-q, key stroke]
+> [ctrl-q or ctrl-d, key stroke]
 ```
 
 7) check container ID. save the modified container (i.e. r-base install)
 ```
 docker ps
 docker commit [containerID] asciinema:r-base
+docker commit 3734b283055f  tbi:r-base
 ```
 
 8) login to dockerhub
@@ -57,5 +56,5 @@ docker commit [containerID] asciinema:r-base
 >``pwd: [YOUR PASSWORD]``
 
 9) tag container
->``docker tag 7591124dd90b dominicklemas/r-base:asciinema``
+>``docker tag e743e990d2e4 dominicklemas/tbi:r-base``
 >``docker push dominicklemas/r-base``
