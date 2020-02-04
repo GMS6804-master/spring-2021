@@ -1,16 +1,38 @@
 # bioconductor Docker Images (https://www.bioconductor.org/help/docker/)
-# windows
 
-# 1) open docker teminal
+In this tutorial, we will build a bioconductor images from an [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/).
 
-# 2) bioconductor/devel_core2
-docker pull bioconductor/devel_core2
+1) create asccinema.org 
 
-# 3a) boot into container
-docker run -ti bioconductor/devel_base2 R
+2) open docker teminal
 
-# 3b) boot into container with share folder that contains data
-docker run -ti -v /c/Users/djlemas/Documents/MyMetabolomics:/data --rm bioconductor/devel_core2 R
+3) pull container
+```
+docker pull asciinema/asciinema
+```
 
-# 4) from within R, change directories to sharedrive
-setwd('/data')
+4) boot into container as bash
+```
+docker run -it asciinema/asciinema bash
+
+5) update and install r-base
+```
+> # check if R is installed?
+> R
+> # we will now install r-base
+> apt-get update
+> apt-get install r-base -y
+> # check to see if R has been installed
+> R
+> # exit R
+> quit()
+```
+
+6) install bioconductor
+```
+> R 
+> if (!requireNamespace("BiocManager", quietly = TRUE)) 
+> install.packages("BiocManager") 
+> BiocManager::install(version = "3.10")
+
+# https://askubuntu.com/questions/218708/installing-latest-version-of-r-base
