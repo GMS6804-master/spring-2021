@@ -27,7 +27,7 @@ docker run -it asciinema/asciinema bash
 > This will associate all recordings uploaded from this machine (past and future ones) to your account, 
 > and allow you to manage them (change title/theme, delete) at asciinema.org.
 ```
-6) start a screen recording & modify the container
+6) start a screen recording 
 ```
 > asciinema rec
 > # Hello translational bioinformatics!
