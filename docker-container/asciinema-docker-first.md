@@ -3,7 +3,7 @@
 In this tutorial, we will pull a [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/), 
 run a container using this image, complete a simple screen recording, and upload to asciinema.org.
 
-1) create asccinema.org account
+1) create asccinema.org 
 
 2) open docker teminal
 
@@ -12,17 +12,12 @@ run a container using this image, complete a simple screen recording, and upload
 docker pull asciinema/asciinema
 ```
 
-4) check image ID
+4) boot into container as bash
 ```
-docker images
-```
-
-5) boot into container as bash
-```
-docker run -ti asciinema/asciinema bash
+docker run -it asciinema/asciinema bash
 ```
 
-6) link docker container to asciinema.org
+5) link docker container to asciinema.org
 ```
 > asciinema auth
 ```
@@ -32,34 +27,33 @@ docker run -ti asciinema/asciinema bash
 > This will associate all recordings uploaded from this machine (past and future ones) to your account, 
 > and allow you to manage them (change title/theme, delete) at asciinema.org.
 ```
-7) start a screen recording
+6) start a screen recording & modify the container
 ```
 > asciinema rec
-> # Hello Translational Bioinformatics Class!
-> # This is my first post!
-> # exit
+> # Hello translational bioinformatics!
+> # date: 2/4/2020
+> # Name: 
+> [ctrl-q or ctrl-d to stop recording, you should see the following below]
 ```
+```
+asciinema: recording finished
+asciinema: press <enter> to upload to asciinema.org, <ctrl-c> to save lo
 
-8) End the recording by hitting control-D. Follow directions on screen to get link to video in your asciinema.org account. 
+View the recording at:
 
-9) exit container
-```
-exit
-```
+    https://asciinema.org/a/fgLTo86h1UjXMFBfpRUWre8kZ
 
-10) check container status
-```
-docker container ls
-```
+This installation of asciinema recorder hasn't been linked to any asciin
+account. All unclaimed recordings (from unknown installations like this
+are automatically archived 7 days after upload.
 
-11) kill container 
-```
-docker kill [container ID]
-```
+If you want to preserve all recordings made on this machine, connect thi
+installation with asciinema.org account by opening the following link:
 
-12) remove container
+    https://asciinema.org/connect/f3c2fb70-2055-4838-b8ab-b7ee568d39d9
 ```
-docker rm -f [container ID]
+7) Exit docker container
+> exit
 ```
 
 
