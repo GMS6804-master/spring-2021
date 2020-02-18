@@ -16,6 +16,7 @@ docker pull dominicklemas/bioconductor-asciinema
 4) boot into container as bash
 ```
 docker run -it dominicklemas/bioconductor-asciinema bash
+```
 
 5) update and install bioconductor
 ```
