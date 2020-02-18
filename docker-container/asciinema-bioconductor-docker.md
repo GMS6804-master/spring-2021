@@ -1,14 +1,14 @@
-# bioconductor Docker Images (https://www.bioconductor.org/help/docker/)
+Bioconductor Quiz
 
-In this tutorial, we will build a bioconductor images from an [asciinema docker image](https://hub.docker.com/r/asciinema/asciinema/).
+In this tutorial, we use a [bioconductor images](https://www.bioconductor.org/help/docker/) that includes [asciinema docker image](https://asciinema.org/) to run the [GEM tutorial](https://bioconductor.org/packages/release/bioc/vignettes/GEM/inst/doc/user_guide.html).
 
-1) create asccinema.org 
+1) create asccinema.org account
 
-2) open docker teminal
+2) open docker terminal
 
 3) pull container
 ```
-docker pull galaxydream/r-base-asclinema
+docker pull dominicklemas/bioconductor-asciinema
 ```
 
 4) boot into container as bash
