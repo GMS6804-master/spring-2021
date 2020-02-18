@@ -15,7 +15,9 @@ docker pull dominicklemas/bioconductor-asciinema
 
 ## 4) boot into container as bash
 ```
-docker run -it -v C:\Users\djlemas\Documents\spring-2020\data:\data  dominicklemas/bioconductor-asciinema bash
+docker run -it -v /c/Users/djlemas/Documents/spring-2020/data:/data  dominicklemas/bioconductor-asciinema bash
+
+-v /c/Users/djlemas/Documents/MyMetabolomics:/data 
 ```
 
 ## 5) link docker container to asciinema.org
