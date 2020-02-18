@@ -20,6 +20,7 @@ docker run -it dominicklemas/bioconductor-asciinema bash
 5) update and install bioconductor
 ```
 > if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
+```
 > BiocManager::install(version = "3.10")
 > quit()
 ```
