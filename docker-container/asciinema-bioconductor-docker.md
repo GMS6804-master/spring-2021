@@ -8,17 +8,17 @@ In the examples below, `$` indicates the command line prompt within the containe
 
 ## 2) open docker terminal
 
-3) pull container
+## 3) pull container
 ```
 docker pull dominicklemas/bioconductor-asciinema
 ```
 
-4) boot into container as bash
+## 4) boot into container as bash
 ```
 docker run -it dominicklemas/bioconductor-asciinema bash
 ```
 
-5) link docker container to asciinema.org
+## 5) link docker container to asciinema.org
 ```
 $ asciinema auth
 ```
@@ -29,30 +29,20 @@ $ asciinema auth
 > and allow you to manage them (change title/theme, delete) at asciinema.org.
 ```
 
-6) start a screen recording 
+## 6) start a screen recording 
 ```
 $ asciinema rec
 ```
 
-7. load R & install the bioconductor pacakge [GEM](https://bioconductor.org/packages/release/bioc/html/GEM.html) 
+## 7) load R & install the bioconductor pacakge [GEM](https://bioconductor.org/packages/release/bioc/html/GEM.html) 
 ```
 $ R
 $ if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
 $ BiocManager::install("GEM")
 ```
 
-6) Exit container
-```
-> exit
-```
-7) Container ID [identify your container id]
-```
-docker ps -l
-```
-8) Commit container
-docker commit 98ac2ea3c27c dominicklemas/bioconductor-asciinema
 
-9) push to dockerhub
-docker login
 
-# https://askubuntu.com/questions/218708/installing-latest-version-of-r-base
+
+## X) Exit container
+```
