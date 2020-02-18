@@ -4,9 +4,9 @@ In this tutorial, we use a [bioconductor docker images](https://www.bioconductor
 
 In the examples below, `$` indicates the command line prompt within the container.
 
-# 1) create asccinema.org account
+## 1) create asccinema.org account
 
-# 2) open docker terminal
+## 2) open docker terminal
 
 3) pull container
 ```
