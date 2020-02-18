@@ -56,14 +56,14 @@ dir(path = DATADIR)
 ```
 
 ## 10) Work flow and result demonstration
+### GEM_EModel:
 ```
-$ env_file_name = paste(DATADIR, "env.txt", sep = .Platform$file.sep)
-$ covariate_file_name = paste(DATADIR, "cov.txt", sep = .Platform$file.sep)
+$ snp_file_name = paste(DATADIR, "snp.txt", sep = .Platform$file.sep)
+$ covariate_file_name = paste(DATADIR, "gxe.txt", sep = .Platform$file.sep)
 $ methylation_file_name = paste(DATADIR, "methylation.txt", sep = .Platform$file.sep)
-$ Emodel_pv = 1
-$ Emodel_result_file_name = "Result_Emodel.txt"
-$ Emodel_qqplot_file_name = "QQplot_Emodel.jpg"
-$ GEM_Emodel(env_file_name, covariate_file_name, methylation_file_name, Emodel_pv, Emodel_result_file_name, Emodel_qqplot_file_name, savePlot=FALSE)
+$ GxEmodel_pv = 1
+$ GxEmodel_result_file_name = "Result_GxEmodel.txt"
+$ GEM_GxEmodel(snp_file_name, covariate_file_name, methylation_file_name, GxEmodel_pv, GxEmodel_result_file_name, topKplot = 1, savePlot=FALSE)
 ```
 ## 11) check the files in your working directory
 ```
@@ -80,8 +80,23 @@ should look like this:
 [19] "tmp"               "usr"               "var"
 ```
 
+## 12) Look at the contents of "Result_Emodel.txt"
+```
+head(read.table(paste(getwd(), "Result_GxEmodel.txt", sep = .Platform$file.sep), header = TRUE))
 
+```
+should look like this:
+```
+    cpg         beta     stats      pvalue       FDR
+1 CpG99  0.002820575  2.779243 0.005891264 0.5891264
+2 CpG32  0.003551990  2.008946 0.045691601 0.9345452
+3 CpG21  0.001896850  1.886230 0.060502399 0.9345452
+4 CpG66  0.001602048  1.866568 0.063212780 0.9345452
+5 CpG75 -0.001969172 -1.696740 0.091075634 0.9345452
+6 CpG34  0.003809056  1.688606 0.092627076 0.9345452
+```
 
+## 13)
 
 ## X) Exit container
 ```
