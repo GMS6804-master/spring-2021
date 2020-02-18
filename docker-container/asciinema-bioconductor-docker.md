@@ -44,6 +44,42 @@ $ if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocMa
 $ BiocManager::install("GEM")
 ```
 
+## 8) Load GEM package
+```
+require(GEM)
+```
+
+## 9) Description of input data (format of files explained in tutorial)
+```
+DATADIR = system.file('extdata',package='GEM')
+dir(path = DATADIR)
+```
+
+## 10) Work flow and result demonstration
+```
+$ env_file_name = paste(DATADIR, "env.txt", sep = .Platform$file.sep)
+$ covariate_file_name = paste(DATADIR, "cov.txt", sep = .Platform$file.sep)
+$ methylation_file_name = paste(DATADIR, "methylation.txt", sep = .Platform$file.sep)
+$ Emodel_pv = 1
+$ Emodel_result_file_name = "Result_Emodel.txt"
+$ Emodel_qqplot_file_name = "QQplot_Emodel.jpg"
+$ GEM_Emodel(env_file_name, covariate_file_name, methylation_file_name, Emodel_pv, Emodel_result_file_name, Emodel_qqplot_file_name, savePlot=FALSE)
+```
+## 11) check the files in your working directory
+```
+$ list.files()
+```
+should look like this:
+```
+ [1] "bin"               "boot"              "dev"
+ [4] "etc"               "home"              "lib"
+ [7] "lib64"             "media"             "mnt"
+[10] "opt"               "proc"              "Result_Emodel.txt"
+[13] "root"              "Rplots.pdf"        "run"
+[16] "sbin"              "srv"               "sys"
+[19] "tmp"               "usr"               "var"
+```
+
 
 
 
