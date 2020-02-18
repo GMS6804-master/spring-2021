@@ -40,6 +40,9 @@ $ R
 $ if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
 $ BiocManager::install(version = "3.10")
 $ quit()
+
+if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+BiocManager::install("GEM")
 ```
 
 6) Exit container
