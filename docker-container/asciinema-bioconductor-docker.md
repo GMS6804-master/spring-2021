@@ -1,6 +1,6 @@
 Bioconductor Quiz
 
-In this tutorial, we use a [bioconductor images](https://www.bioconductor.org/help/docker/) that includes [asciinema docker image](https://asciinema.org/) to run the [GEM tutorial](https://bioconductor.org/packages/release/bioc/vignettes/GEM/inst/doc/user_guide.html).
+In this tutorial, we use a [bioconductor docker images](https://www.bioconductor.org/help/docker/) that includes [asciinema](https://asciinema.org/) functionality to run the [GEM tutorial](https://bioconductor.org/packages/release/bioc/vignettes/GEM/inst/doc/user_guide.html).
 
 1) create asccinema.org account
 
