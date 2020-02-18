@@ -4,9 +4,9 @@ In this tutorial, we use a [bioconductor docker images](https://www.bioconductor
 
 In the examples below, `$` indicates the command line prompt within the container.
 
-1) create asccinema.org account
+#1) create asccinema.org account
 
-2) open docker terminal
+#2) open docker terminal
 
 3) pull container
 ```
@@ -37,12 +37,8 @@ $ asciinema rec
 7. load R & install the bioconductor pacakge [GEM](https://bioconductor.org/packages/release/bioc/html/GEM.html) 
 ```
 $ R
-$ if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
-$ BiocManager::install(version = "3.10")
-$ quit()
-
-if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
-BiocManager::install("GEM")
+$ if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+$ BiocManager::install("GEM")
 ```
 
 6) Exit container
