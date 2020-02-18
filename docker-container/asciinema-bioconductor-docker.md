@@ -18,7 +18,17 @@ docker pull dominicklemas/bioconductor-asciinema
 docker run -it dominicklemas/bioconductor-asciinema bash
 ```
 
-5) update and install bioconductor
+5) link docker container to asciinema.org
+```
+$ asciinema auth
+```
+
+6) load R 
+```
+$ R
+```
+
+install the bioconductor pacakge [GEM](https://bioconductor.org/packages/release/bioc/html/GEM.html) 
 ```
 $ if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
 $ BiocManager::install(version = "3.10")
