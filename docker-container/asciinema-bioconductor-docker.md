@@ -22,14 +22,21 @@ docker run -it dominicklemas/bioconductor-asciinema bash
 ```
 $ asciinema auth
 ```
+```
+> Open the following URL in a web browser to link your install ID with your asciinema.org user account:
+> https://asciinema.org/connect/[your-url]
+> This will associate all recordings uploaded from this machine (past and future ones) to your account, 
+> and allow you to manage them (change title/theme, delete) at asciinema.org.
+```
 
-6) load R 
+6) start a screen recording 
+```
+$ asciinema rec
+```
+
+7. load R & install the bioconductor pacakge [GEM](https://bioconductor.org/packages/release/bioc/html/GEM.html) 
 ```
 $ R
-```
-
-install the bioconductor pacakge [GEM](https://bioconductor.org/packages/release/bioc/html/GEM.html) 
-```
 $ if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
 $ BiocManager::install(version = "3.10")
 $ quit()
