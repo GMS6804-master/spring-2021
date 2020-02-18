@@ -29,9 +29,12 @@ $ asciinema auth
 > and allow you to manage them (change title/theme, delete) at asciinema.org.
 ```
 
-## 6) start a screen recording 
+## 6) start a screen recording. include your name/date/tutorial information 
 ```
 $ asciinema rec
+$ # Name: 
+$ # Date: 
+$ # bioconductor:: GEM tutorial
 ```
 
 ## 7) load R & install the bioconductor pacakge [GEM](https://bioconductor.org/packages/release/bioc/html/GEM.html) 
