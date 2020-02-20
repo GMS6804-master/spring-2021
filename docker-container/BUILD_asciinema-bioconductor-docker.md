@@ -1,8 +1,6 @@
 # This Tutorial Builds the Bioconductor_docker image with Asciinema functionality
 
-In this tutorial, we use a [bioconductor docker images](https://hub.docker.com/r/bioconductor/bioconductor_docker) that includes [asciinema](https://asciinema.org/) functionality.
-
-In the examples below, `$` indicates the command line prompt within the container.
+In this tutorial, we build a [bioconductor docker images](https://hub.docker.com/r/bioconductor/bioconductor_docker) that includes [asciinema](https://asciinema.org/) functionality.
 
 ## 1) Create [asciinema.org](https://asciinema.org/) account
 
