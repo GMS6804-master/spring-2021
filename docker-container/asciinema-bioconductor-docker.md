@@ -10,13 +10,15 @@ In the examples below, `$` indicates the command line prompt within the containe
 
 ## 3) pull container
 ```
-docker pull dominicklemas/bioconductor-asciinema
+docker pull dominicklemas/bioconductor_asciinema
 ```
 
 ## 4) boot into container as bash
 ```
-docker run -it dominicklemas/bioconductor-asciinema bash
+docker run -it -v c:/Users/djlemas/Documents:/data dominicklemas/bioconductor_asciinema:02_2020 bash
 ```
+
+C:\Users\djlemas\Documents
 
 ## 5) link docker container to asciinema.org
 ```

@@ -20,6 +20,16 @@ docker run -it bioconductor/bioconductor_docker bash
 
 ## 5) Installing asciinema # https://asciinema.org/docs/installation
 ```
+$ apt-get update
+$ apt-get install asciinema
+[ctrl-p] # exit container
+```
 
-## 6) Commit and Save to Dockerhub
-
+## 6) Commit, tag and save to Dockerhub
+```
+docker container ls
+docker commit [CONTAINER ID] dominicklemas/bioconductor_asciinema
+docker tag [IMAGE ID] dominicklemas/bioconductor_asciinema:02_2020
+docker login
+docker push dominicklemas/bioconductor_asciinema:02_2020
+```
