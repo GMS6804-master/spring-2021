@@ -63,3 +63,4 @@ docker push dominicklemas/bioconductor_asciinema:02_2020
 # Some notes
 
 - Modifying [r-base Dockerfile](https://github.com/rocker-org/rocker/blob/df56b98e4a2a4611fa9aacae99c4a304531c2640/r-base/Dockerfile) or [bioconductor Dockerfile](https://hub.docker.com/r/bioconductor/bioconductor_docker/dockerfile) by adding asciinema command lines does not work, the asciinema upload function will be disabled if doing so. The difference of the operating system among the three Dockers might be one of the reasons: https://github.com/asciinema/asciinema/issues/353
+- The [asciinema Docker](https://hub.docker.com/r/asciinema/asciinema/) which has already been built by them is not consistent with the Dockerfile on [their github](https://github.com/asciinema/asciinema), the operating systems are different and the former one does not allow your to install the latest R.
