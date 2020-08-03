@@ -36,8 +36,8 @@ Download and install RStudio from <https://www.rstudio.com/products/rstudio/down
 
 ### R console
 1. Start R
-2. Open [R Tutorial](https://github.com/jihoonkim/MED263/blob/master/week1/run_rmarkdown.Rmd) in the class GitHub with your browser
-3. Copy and past each lines to R console
+2. Open the [week 1 quiz](https://github.com/gms6804/spring-2021/blob/master/week1/wk1_quiz.Rmd) in your browser.
+3. Copy and past each lines to R console.
 
 
 ### R Studio
