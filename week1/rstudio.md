@@ -1,4 +1,4 @@
-# Tutorial: R and RStudio
+# R and RStudio
 
 ### R
 R is 'GNU S', a freely available language and environment for statistical computing and graphics which provides a wide variety of statistical and graphical techniques
