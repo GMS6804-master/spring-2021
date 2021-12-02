@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#provisioning for MED263 Harismendy
+#provisioning for GMS6804 
 
 apt-get update && apt-get install -y  \
 autoconf \
