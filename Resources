@@ -1,5 +1,21 @@
 # R packages to Demo
-BGData: A Suite of Packages for Analysis of Big Genomic Data
- https://cran.r-project.org/web/packages/BGData/readme/README.html
- 
- COVID: https://cran.r-project.org/web/packages/covid19.analytics/vignettes/covid19.analytics.html
+* [BGData: A Suite of Packages for Analysis of Big Genomic Data](https://cran.r-project.org/web/packages/BGData/readme/README.html)
+* [COVID19.analytics](https://cran.r-project.org/web/packages/covid19.analytics/vignettes/covid19.analytics.html)
+
+Bad Data Handbook. Selected chapter titles:
+    - Is It Just Me, or Does This Data Smell Funny?
+    - Data Intended for Human Consumption, Not Machine Consumption. (spreadsheets are evil)
+    - Bad Data Lurking in Plain Text. (the horrors of character encoding)
+    - When Databases Attack: A Guide for When to Stick to Files
+    - Data Traceability
+  * Creating More Effective Graphs by Naomi B. Robbins
+    - <http://www.amazon.com/Creating-Effective-Graphs-Naomi-Robbins/dp/0985911123>
+  * Grammar of graphics
+    - <http://ggplot2.org>
+  * Nine simple ways to make it easier to (re)use your data by Ethan P White, Elita Baldridge, Zachary T. Brym, Kenneth J. Locey, Daniel J. McGlinn, Sarah R. Supp.
+    - Ideas in Ecology and Evolution 6(2): 1–10, 2013. doi:10.4033/iee.2013.6b.6.f <http://library.queensu.ca/ojs/index.php/IEE/article/view/4608>
+  * Tidy data by Hadley Wickham. Preprint available <http://vita.had.co.nz/papers/tidy-data.pdf>.  
+  * CS109 Data Science, Harvard.
+    - <http://cs109.org/syllabus.php>
+    - [A Rubric for Data Wrangling and Exploration](http://nbviewer.ipython.org/github/cs109/content/blob/master/lec_04_wrangling.ipynb)
+    - [lectures on Google Drive](https://drive.google.com/folderview?id=0BxYkKyLxfsNVd0xicUVDS1dIS0k&usp=sharing)
