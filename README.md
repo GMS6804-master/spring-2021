@@ -32,54 +32,22 @@ This course will cover translational bioinformatics in the context of human dise
 ## Courses
 | **Week**  | **Dates** | **Topic**                                                            | **Programming**                     | **Assignments**                                      |
 | --------- | --------- | -------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------- |
-| **Wk 1**  | 01/10     | Course overview & objectives                                         | Github/Rstudio/Docker/Twitter       | quiz-01
-quiz-02                                     |
-| **Wk 2**  | 01/17\*   | Bioinformatic Tools & Databases
-
-**Dr. Aida Miro-Herrans**           | Datacamp                            | quiz-03
-
-reaction paper #1                           |
-| **Wk 3**  | 01/24     | Translational Bioinformatics: Past, Present, and Future              | Docker
-
-Asciinema                   | quiz-04
-
-cover-letter-V1                             |
-| **Wk 4**  | 01/31     | Biomolecules, Data and Diseases                                      | Docker
-
-Asciinema                   | quiz-05
-
-biosketch                                   |
-| **Wk 5**  | 02/7      | Collaboration & Reproducibility
-
-**Xinsong Du**                      | Github Learning Lab                 | quiz-06                                              |
-| **Wk 6**  | 02/14     | Sequencing, Assembly & Interpretation
-
-**Dr. Rui Yin**               | Rstudio
-
-Bioconductor               | reaction paper #2
-
-proposal outline
-
-cover-letter-V2 |
-| **Wk 7**  | 02/21     | Genetic Variation &                    Gene-Environment Interactions | Rstudio
-
-Bioconductor               | quiz-07                                              |
-| **Wk 8**  | 02/28     | Interdisciplinary Center for Biotechnology Research (ICBR) Tour      | reaction paper #3
-
-specific aims-V1 |
-| **Wk 9**  | 03/07     | Microbiome & Microbe Host Interactions                               | Demo: TBD                           | quiz-08
-
-specific aims-V2                            |
-| **Wk 10** | 03/14     | NO CLASS/ SPRING BREAK                                               |
-| **Wk 11** | 03/21     | Research Computing Center (RCC) Field Trip                           | reaction paper #4                   |
-| **Wk 12** | 03/28     | Metabolomics
-
-**Dr. Tim Garrett**                                    | Demo: TBD                           | research plan                                        |
-| **Wk 13** | 04/04     | Late Breaking Topics                                                 | Demo: TBD                           | peer-review                                          |
-| **Wk 14** | 04/11     | Innovation Hub & Technology Transfer Tour                            | reaction paper #5                   |
-| **Wk 15** | 04/18     | Group Project Presentations                                          | full proposal                       |
-| **Wk 16** | 04/25     | NO CLASS                                                             | final exam                          |
-
+| **Wk 1**  | 01/10     | Course overview & objectives                                         | Github/Rstudio/Docker/Twitter       | quiz-01/quiz-02                                      |
+| **Wk 2**  | 01/17     | Bioinformatic Tools & Databases                                      | Datacamp                            | quiz-03/reaction paper #1                            |
+| **Wk 3**  | 01/24     | Translational Bioinformatics: Past, Present, and Future              | Docker/Asciinema                    | quiz-04/ cover-letter-V1                             |
+| **Wk 4**  | 01/31     | Biomolecules, Data and Diseases                                      | Docker/Asciinema                    | quiz-05/ biosketch                                   |
+| **Wk 5**  | 02/7      | Collaboration & Reproducibility                                      | Github Learning Lab                 | quiz-06                                              |
+| **Wk 6**  | 02/14     | Sequencing, Assembly & Interpretation                                | Datacamp                            | reaction paper #2/proposal outline/cover-letter-V2   |
+| **Wk 7**  | 02/21     | Genetic Variation &  Gene-Environment Interactions                   | Datacamp							 | quiz-07                                              |
+| **Wk 8**  | 02/28     | Interdisciplinary Center for Biotechnology Research (ICBR) Tour      										 | reaction paper #3/specific aims-V1 					|
+| **Wk 9**  | 03/07     | Microbiome & Microbe Host Interactions                               | Datacamp                            | quiz-08/specific aims-V2                             |
+| **Wk 10** | 03/14     | NO CLASS/ SPRING BREAK                                               																								|
+| **Wk 11** | 03/21     | Research Computing Center (RCC) Field Trip                           										 | reaction paper #4                 					|
+| **Wk 12** | 03/28     | Metabolomics					                             	       | Datacamp                            | research plan                                        |
+| **Wk 13** | 04/04     | Late Breaking Topics                                                 | Datacamp                            | peer-review                                          |
+| **Wk 14** | 04/11     | Innovation Hub & Technology Transfer Tour                            										 | reaction paper #5                  					|
+| **Wk 15** | 04/18     | Group Project Presentations                                          										 | full proposal                   					    |
+| **Wk 16** | 04/25     | NO CLASS                                                             										 | final exam                                           |
 
 ## Office Hours
 * by appointment only. 
