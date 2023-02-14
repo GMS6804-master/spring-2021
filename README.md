@@ -1,15 +1,27 @@
-# GMS6804 Spring 2021, Translational Bioinformatics
+# GMS6804 Spring 2023, Translational Bioinformatics
 
 ## Course Description
-This course will cover translational bioinformatics in the context of human diseases. Students will be provided with the practical skills to implement what they have learned in class. Specifically, when the course is finished, students will be able to analyze multi-omics data to understand human disease.
+This course will cover translational bioinformatics in the context of human diseases. Students will be provided with the practical skills to implement what they have learned in class. Specifically, when the course is finished, students will be able to analyze multi-omics data to understand human disease. The objective of this course is expose students to the topics and technologies used in modern bioinformatics studies. The course covers a mix of biological and computational topics, including:
+- Genetic variation and Genome-Wide Association Studies
+- Current high throughput sequencing assays (DNA-Seq, RNA-Seq, ChIP-Seq)
+- Differential gene expression techniques
+- Microbiome/metagenomics techniques
+- Metabolomics
+- Proteomics
+- Systems, network, and integrative biology
+- Basic linux cluster usage
+- Python and R scripting
+- Computational workflow and replication strategies
+- Genomics data visualization techniques
+- Biological databases
 
 ## Course Information
 * Number: GMS6804, Translational Bioinformatics 
-* Semester: Spring 2021
+* Semester: Spring 2023
 * Units: 3
 * Instructor: Dominick Lemas (djlemas@ufl.edu)
-* Place: Harrell 128 or Communicore CG-22
-* Time: 2-5 pm, Tuesdays  
+* Place: Harrell 128 or Communicore CG-24
+* Time: 11:45-2:45 pm, Tuesdays  
 
 ## Dates
 * Class start date: Tuesday January 9, 2018
@@ -18,40 +30,66 @@ This course will cover translational bioinformatics in the context of human dise
 * Student presentation (for final exam) date: Thursday March 8, 2018
 
 ## Courses
-| Week | Date                          | Topic                                            | Instructor |
-|------|-------------------------------|--------------------------------------------------|------------|
-| 1    | Tuesday  1/9  | Overview & Bootcamp part 1 (docker and linux)    | Lucila Ohno-Machado (lohnomachado@ucsd.edu) and Jihoon Kim (j5kim@ucsd.edu) |
-| 1    | Thursday 1/11 | Bootcamp part 2 (conda, Jupyter notebok, and R)  | Jihoon Kim (j5kim@ucsd.edu) |
-| 2    | Tuesday  1/16 | Network Biology lecture                                  | Hannah Carter (hkcarter@ucsd.edu) |
-| 2    | Thursday 1/18 | Network Biology hands-on session                         | Hannah Carter (hkcarter@ucsd.edu) |
-| 3    | Tuesday  1/23  | Exome-seq and variant analysis lecture            | Olivier Harismendy (oharismendy@ucsd.edu) |
-| 3    | Thursday 1/25 | Exome-seq and variant analysis hands-on session   | Olivier Harismendy (oharismendy@ucsd.edu) |
-| 4    | Tuesday  1/30  | Classification model and survival analysis in biomedicine | Xiaoqian Jiang (x1jiang@ucsd.edu) |
-| 4    | Thursday 2/1   | Classification model and survival analysis in biomedicine hands-on session | Xiaoqian Jiang (x1jiang@ucsd.edu) |
-| 5    | Tuesday  2/6 | RNA-seq lecture                                  | Katie Fisch (kfisch@ucsd.edu) |
-| 5    | Thursday 2/8 | RNA-seq hands-on session                         | Katie Fisch  (kfisch@ucsd.edu)|
-| 6    | Tuesday  2/13 | Prioritizing disease mutations using DNA sequence data lecture          | Vikas Bansal (vibansal@ucsd.edu) |
-| 6    | Thursday 2/15  | Prioritizing disease mutations using DNA sequence data hands-on session | Vikas Bansal (vibansal@ucsd.edu) |
-| 7    | Tuesday  2/20  | Chip-Seq lecture          | Sven Heinz (sheinz@ucsd.edu) |
-| 7    | Thursday 2/22  | Chip-Seq hands-on session | Sven Heinz (sheinz@ucsd.edu) |
-| 8    | Tuesday  2/27  | GRO-seq lecture            | Chris Benner (cbenner@ucsd.edu) |
-| 9    | Thursday 3/1   | GRO-seq  hands-on session | Chris Benner (cbenner@ucsd.edu)  |
-| 9    | Tuesday  3/6  | Ethics, Privacy, and Policy lecture          | Cinnamon Bloss (cbloss@ucsd.edu) |
-| 9    | Thursday 3/8   | Student Presentation | Jihoon Kim (j5kim@ucsd.edu) |
+| **Week**  | **Dates** | **Topic**                                                            | **Programming**                     | **Assignments**                                      |
+| --------- | --------- | -------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------- |
+| **Wk 1**  | 01/10     | Course overview & objectives                                         | Github/Rstudio/Docker/Twitter       | quiz-01
+quiz-02                                     |
+| **Wk 2**  | 01/17\*   | Bioinformatic Tools & Databases
+
+**Dr. Aida Miro-Herrans**           | Datacamp                            | quiz-03
+
+reaction paper #1                           |
+| **Wk 3**  | 01/24     | Translational Bioinformatics: Past, Present, and Future              | Docker
+
+Asciinema                   | quiz-04
+
+cover-letter-V1                             |
+| **Wk 4**  | 01/31     | Biomolecules, Data and Diseases                                      | Docker
+
+Asciinema                   | quiz-05
+
+biosketch                                   |
+| **Wk 5**  | 02/7      | Collaboration & Reproducibility
+
+**Xinsong Du**                      | Github Learning Lab                 | quiz-06                                              |
+| **Wk 6**  | 02/14     | Sequencing, Assembly & Interpretation
+
+**Dr. Rui Yin**               | Rstudio
+
+Bioconductor               | reaction paper #2
+
+proposal outline
+
+cover-letter-V2 |
+| **Wk 7**  | 02/21     | Genetic Variation &                    Gene-Environment Interactions | Rstudio
+
+Bioconductor               | quiz-07                                              |
+| **Wk 8**  | 02/28     | Interdisciplinary Center for Biotechnology Research (ICBR) Tour      | reaction paper #3
+
+specific aims-V1 |
+| **Wk 9**  | 03/07     | Microbiome & Microbe Host Interactions                               | Demo: TBD                           | quiz-08
+
+specific aims-V2                            |
+| **Wk 10** | 03/14     | NO CLASS/ SPRING BREAK                                               |
+| **Wk 11** | 03/21     | Research Computing Center (RCC) Field Trip                           | reaction paper #4                   |
+| **Wk 12** | 03/28     | Metabolomics
+
+**Dr. Tim Garrett**                                    | Demo: TBD                           | research plan                                        |
+| **Wk 13** | 04/04     | Late Breaking Topics                                                 | Demo: TBD                           | peer-review                                          |
+| **Wk 14** | 04/11     | Innovation Hub & Technology Transfer Tour                            | reaction paper #5                   |
+| **Wk 15** | 04/18     | Group Project Presentations                                          | full proposal                       |
+| **Wk 16** | 04/25     | NO CLASS                                                             | final exam                          |
 
 
 ## Office Hours
-* 3:30-4:30 pm after class Tuesdays and Thursdays at room 304, MET building
-* If these hours don't work you, email to Andre (affaustino@ucsd.edu) or Jihoon (j5kim@ucsd.edu) to schdedule different hours, preferrably on Tuesdays and Thursdays.
-
+* by appointment only. 
 
 ## Homework
 * You will get a homework every Thursday.
 * The expected level of homework is that whoever attended and followed well on the Thursday hands-on course should be able to answer the homework questions in a few hours.
-* Homework is due by the following Thursday right before class (1:59 pm Thursdays).
-* Turn in the homework to TA Andre(affaustino@ucsd.edu) by email.
+* Homework is due by the following Friday at midnight (11:59 pm).
+* Turn in the homework to CANVAS.
 * Show all codes with answers to the questions.
-
 
 ## Final Exam
 * Create a hands-on session document to perform data analysis with your own data (public or private data) similar to MED 263 class
